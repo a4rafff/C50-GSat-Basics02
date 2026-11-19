@@ -107,22 +107,37 @@ namespace Demo
 
 
 
-            string yearText = "2023";
+            //string yearText = "2023";
 
-            int yearInt = int.Parse(yearText);
+            //int yearInt = int.Parse(yearText);
 
-            Console.WriteLine(yearInt);
+            //Console.WriteLine(yearInt);
 
-            string badText = "abc";
+            //string badText = "abc";
 
-            if (int.TryParse(badText, out int badInt))
-            {
-                Console.WriteLine(badInt);
-            }
-            else
-            {
-                Console.WriteLine("Invalid number");
-            }
+            //if (int.TryParse(badText, out int badInt))
+            //{
+            //    Console.WriteLine(badInt);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid number");
+            //}
+
+
+            #endregion
+
+            #region Question 9
+            // Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string
+
+            int pagesQ9 = 464;
+
+            string pageQ9Text = pagesQ9.ToString();
+
+            Console.WriteLine(pageQ9Text.GetType());
+
+
+            //}
 
 
             #endregion
