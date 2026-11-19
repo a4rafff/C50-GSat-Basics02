@@ -77,11 +77,24 @@
 
 
 
-            double price = 49.99;
+            //double price = 49.99;
 
-            int intPrice = (int)price;
+            //int intPrice = (int)price;
 
-            Console.WriteLine(intPrice);
+            //Console.WriteLine(intPrice);
+
+
+            #endregion
+            #region Question 7
+            // Given string pagesText = "464";, convert it into an int using the Convert class.
+
+
+
+            string pagesText = "464";
+
+            int pagesInt = Convert.ToInt32(pagesText);
+
+            Console.WriteLine(pagesInt);
 
 
             #endregion
