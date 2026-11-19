@@ -130,11 +130,27 @@ namespace Demo
             #region Question 9
             // Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string
 
-            int pagesQ9 = 464;
+            //int pagesQ9 = 464;
 
-            string pageQ9Text = pagesQ9.ToString();
+            //string pageQ9Text = pagesQ9.ToString();
 
-            Console.WriteLine(pageQ9Text.GetType());
+            //Console.WriteLine(pageQ9Text.GetType());
+
+
+            //}
+
+
+            #endregion
+
+            #region Question 10
+            // Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+
+
+            int copies = 100;
+
+            object objBox = copies;
+
+            int objInt = (int)objBox;
 
 
             //}
