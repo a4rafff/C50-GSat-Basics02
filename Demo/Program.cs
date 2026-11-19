@@ -1,4 +1,7 @@
-﻿namespace Demo
+﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
+
+namespace Demo
 {
     internal class Program
     {
@@ -90,11 +93,36 @@
 
 
 
-            string pagesText = "464";
+            //string pagesText = "464";
 
-            int pagesInt = Convert.ToInt32(pagesText);
+            //int pagesInt = Convert.ToInt32(pagesText);
 
-            Console.WriteLine(pagesInt);
+            //Console.WriteLine(pagesInt);
+
+
+            #endregion
+
+            #region Question 8
+            // Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it fails
+
+
+
+            string yearText = "2023";
+
+            int yearInt = int.Parse(yearText);
+
+            Console.WriteLine(yearInt);
+
+            string badText = "abc";
+
+            if (int.TryParse(badText, out int badInt))
+            {
+                Console.WriteLine(badInt);
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
 
 
             #endregion
